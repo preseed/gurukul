@@ -1,0 +1,88 @@
+	/*
+	Skin Name: base
+	Description: base skin for the Epic Slider.
+	Version: 1.0
+	Author: unlimitDesign
+	*/
+
+	/* http://meyerweb.com/eric/tools/css/reset/ 
+       v2.0 | 20110126
+       License: none (public domain)
+	*/
+	
+	/*html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, 	var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0;padding: 0;border: 0;}
+	
+	body{background:#fff;}*/
+
+
+	/*Wrapper
+	-------------------*/
+	
+	.epicSlider.slider-wrapper{width:100%;height:100%;position:absolute;overflow:hidden;top:0px;left:0px; background: url(../images/ui_epicslider/loader.gif) center center no-repeat;}
+
+	/*Overlay
+	-------------------*/
+	
+	.epicSlider.theme-default #epic-overlay{position:absolute;width:100%;height:100%;background: url(../images/ui_epicslider/pattern.png) repeat top left;z-index:2;}
+	
+
+	/*Slides
+	-------------------*/
+	
+	.epicSlider.theme-default #slides img{position:absolute;top:0px;left:0px;width:100%;display:none;/* -ms-interpolation-mode:nearest-neighbor; image-rendering: -moz-crisp-edges;*/}
+
+
+
+
+	/*Logo
+	-------------------*/
+	
+	.epicSlider.theme-default .epic-graphic{display:none;}
+	
+
+	/*Caption - text
+	-------------------*/
+	
+	
+	/*positions*/
+	
+		/*centered*/
+		
+		/*left*/
+		
+	
+		/*right*/
+		
+		
+	
+	
+	/*caption type: descrete - 1  */
+	
+		/*sizes*/
+	
+	
+	
+	/*caption type: impact - 1  */
+	
+		/*sizes*/
+	
+		/*font variation*/
+		
+		/*styling*/
+		
+		/*positioning*/
+		
+	
+	
+	
+	/*caption type: impact - 2  */
+	
+		/*sizes*/
+	
+		/*link*/
+	
+	
+	
+	
+	
+

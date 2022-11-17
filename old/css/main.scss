@@ -1,0 +1,710 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio, canvas, img, svg, video {
+    vertical-align: middle;
+}
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+$pink: #ff005a;
+$text: '';
+
+
+@mixin medmx($mxw){
+   @media all and (max-width: $mxw){
+        @content;
+   }
+}
+@mixin medmn($mnw){
+   @media all and (min-width: $mnw){
+        @content;
+   }
+}
+@mixin medmxn($mnw,$mxw){
+   @media all and (min-width: $mnw) and (max-width: $mxw){
+        @content;
+   }
+}
+
+@mixin head {
+    .headings {
+        color: #ffffff;
+        font-weight: bold;
+        span:last-child {
+            font-family: 'Quicksand', sans-serif;
+            font-weight: normal;
+        }
+        @include medmx(375px) {
+            margin-bottom: 40px;
+            font-size: 1.2em;
+        }
+        @include medmxn(376px,640px) {
+            margin-bottom: 80px;
+            font-size: 2em;
+        }
+        @include medmn(641px) {
+            margin-bottom: 100px;
+            font-size: 2.2em;
+        }
+    }
+}
+@mixin imgstyle {
+    width: 170px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, .5);
+}
+@mixin profile {
+    #image {
+        display: block;
+        float: left;
+        margin-right: 20px;
+        img {
+            @include imgstyle;
+        }
+        @include medmx(375px){
+            float: none;
+            display: block;
+            margin: 0 auto 20px;
+            text-align: center;
+        }
+        @include medmxn(376px,640px){
+            margin-right: 20px;
+            margin-bottom: 40px;
+        }
+        @include medmn(641px) {
+            margin-right: 60px;
+            margin-bottom: 70px;
+        }
+    }
+    .description {
+        #name-position {
+            color: $pink;
+            font-weight: bold;
+            span:last-child {
+                color: #ffffff;
+                font-weight: normal;
+                font-family: 'Quicksand', sans-serif;
+            }
+            @include medmx(375px) {
+                font-size: 1em;
+                display: block;
+                margin: 0 auto;
+                text-align: center;
+            }
+            @include medmxn(376px,640px) {
+                font-size: 1.5em;
+            }
+            @include medmn(641px) {
+                font-size: 1.6em;
+            }
+        }
+        #content {
+            margin-top: 20px;
+            color: #ffffff;
+            font-size: .75em;
+            text-align: justify;
+            a{
+                text-decoration: none;
+                color: $pink;
+            }
+            @include medmn(376px){
+                font-size: .85em;
+            }
+        }
+    }
+    .links{
+        margin-top: 10px;
+        float: none;
+        a {
+            text-decoration: none;
+            color: $pink;
+            @include medmx (375px){
+                font-size: .60em;
+            } 
+        }
+        span {
+            text-decoration: none;
+            color: $pink;
+            cursor: pointer;
+            @include medmx (375px){
+                font-size: .60em;
+            }
+        }
+        span:last-child {
+            color: #ffffff;
+            cursor: text;
+        }
+        img {
+            &:first-child {
+                margin-right: 5px;
+            }
+            &:last-child {
+                margin-left: 5px;
+            }
+            &:hover {
+                opacity: .5;
+            }
+        }
+    }
+}
+
+@mixin grid {
+    margin: 40px auto 0;
+    @include head;
+    .team-members {
+        text-align: center;
+        .member{
+            margin-bottom: 40px;
+        }
+        img {
+            @include imgstyle;
+        }
+        .name {
+            color: $pink;
+            font-weight: bold;
+        }
+        &:nth-child(2){
+            font-family: 'Quicksand',sans-serif;
+            color: #ffffff;
+        }
+        a {
+            text-decoration: none;
+            color: $pink;
+            font-size: .75em;
+            img {
+                border-radius: 0;
+                width: 25px;
+                border: none;
+                &:nth-child(1){
+                    margin-right: 5px;
+                }
+                &:nth-child(2){
+                    margin-left: 5px;
+                }
+                &:hover{
+                    opacity: .5;
+                }
+            }
+        }
+        @include medmx(375px){
+            column-count: 1;
+        }
+        @include medmxn(376px,640px){
+            column-count: 2;
+        }
+        @include medmxn(641px,920px){
+            column-count: 3;
+        }
+        @include medmn(921px) {
+            column-count: 4;
+        }
+        margin-bottom: 40px;
+    }
+}
+
+body {
+    background-image: url(../img/dark_mosaic.png);
+    background-attachment: fixed;
+    -webkit-font-smoothing: antialiased;
+    transition: all 500ms;
+    div {
+        overflow: hidden;
+    }
+    @include medmx(375px) {
+        font-size: 20px;
+    }
+}
+.page-wrapper {
+    // background-color: rgba(255,255,255,.05);
+    width: 90%;
+    display: block;
+    max-width: 950px;
+    margin: 100px auto 0;
+    height: auto;
+    overflow: hidden;
+    @include medmx(375px) {
+        margin: 50px auto 0;
+    }
+}
+#home img {
+    width: 30px;
+    height: auto;
+    &:hover {
+        opacity: .5;
+    }
+}
+.logo-container {
+    margin-top: 50px;
+    height: auto;
+}
+.logo-container h3 {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bold;
+    color: $pink;
+    span {
+        font-family: 'Quicksand', sans-serif;
+        font-weight: normal;
+    }
+    @include medmx(375px) {
+        font-size: 2em;
+    }
+    @include medmxn(376px,720px) {
+        font-size: 3.4em;
+    }
+    @include medmxn(721px,980px) {
+        font-size: 4.5em;
+    }
+    @include medmn(981px) {
+        font-size: 6em;
+    }
+}
+.quote {
+    display: block;
+    margin: 30px auto;
+    text-align: center;
+    color: #ffffff;
+    width: 85%;
+    max-width: 600px;
+    span:last-child {
+        color: $pink;
+    }
+    @include medmx(375px) {
+        font-size: .75em;
+        margin-bottom: 40px;
+    }
+    @include medmn(376px) {
+        margin-bottom: 80px;
+        font-size: 1em;
+    }
+}
+hr {
+    border: none;
+    background: rgba(255, 255, 255, 1);
+    margin: 0 auto;
+    width: 100%;
+}
+.section-1 {
+    margin-top: 40px;
+    @include head;
+    .founder {
+        @include profile;
+        margin-bottom: 40px;
+    }
+    .weblab-head {
+        clear: both;
+        @include profile;
+        margin-bottom: 40px;
+    }
+    .investor {
+        clear: both;
+        @include profile;
+        margin-bottom: 40px;
+    }
+    #get-in-touch {
+        clear: both;
+        display: block;
+        margin: 0 auto 40px;
+        width: 90%;
+        text-align: center;
+        span {
+            color: white;
+            font-size: 1em;
+            a {
+                text-decoration: none;
+                color: $pink;
+            }
+            @include medmn(376px) {
+                font-size: 1.5em;
+            }
+        }
+        @include medmn(376px) {
+            margin: 100px auto 60px;
+        }
+    }
+}
+
+.section-2 {
+    margin-top: 40px;
+    @include head;
+    .advisor {
+        @include profile;
+        margin-bottom: 60px;
+    }
+}
+
+.section-3 {
+    @include head;
+    .headings {
+        margin-top: 20px;
+    }
+    .team-members {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        .member {
+            margin: 10px;
+            margin-left: 25px;
+            margin-right: 25px;
+            width: 180px;
+            height: 275px;
+            font-family: 'Quicksand',sans-serif;
+            img {
+                border-radius: 50%;
+                border: 2px solid rgba(255, 255, 255, .5);
+            }
+            div {
+                display: block;
+                margin: 0 auto;
+                text-align: center;
+                img {
+                    border: none;
+                    border-radius: 0;
+                }
+                &:nth-child(3){
+                    color: #ffffff;
+                }
+            }
+            .name {
+                color: $pink;
+                font-weight: bold;
+            }
+            a {
+                text-decoration: none;
+                img {
+                    border-radius: 0;
+                    width: 25px;
+                    border: none;
+                    &:nth-child(1){
+                        margin-right: 5px;
+                    }
+                    &:nth-child(2){
+                        margin-left: 5px;
+                    }
+                    &:hover{
+                        opacity: .5;
+                    }
+                }
+            }
+        }
+        // .member {
+        //     display: flex;
+        //     overflow: hidden;
+        //     flex-direction: row;
+        //     img {
+        //         display: block;
+        //         width: 170px;
+        //         height: 170px;
+        //     }
+        //     div {
+        //         display: block;
+        //         img {
+        //             width: 100%;
+        //             height: auto;
+        //         }
+        //     }
+        // }
+    }    
+}
+
+.section-4 {
+    @include grid;
+    #brief-descritpion{
+        margin-top: -50px;
+        color: #ffffff;
+        text-align: left;
+        font-size: .75em;
+        margin-bottom: 40px;
+        @include medmn(376px){
+            font-size: 1.2em;
+        }
+    }
+    .team-members{
+        &:nth-child(3){
+            font-family: 'Quicksand',sans-serif;
+            color: #ffffff;
+        }
+    }
+}
+
+.section-5 {
+    @include grid;
+    .team-members {
+        column-count: 1;
+        float: left;
+    }
+}
+
+#message {
+    clear: both;
+    span {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        color: #ffffff;
+        margin-bottom: 40px;
+        a {
+            text-decoration: none;
+            color: $pink;
+        }
+        @include medmx(375px) {
+            font-size: 1em;
+        }
+    }
+}
+
+#meetus {
+    span {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        color: #ffffff;
+        margin-bottom: 40px;
+        a {
+            text-decoration: none;
+            color: $pink;
+        }
+        @include medmx(375px) {
+            font-size: 1em;
+        }
+    }
+}
+
+#apply {
+    display: block;
+    margin: 0 auto 40px;
+    text-align: center;
+    h3 {
+        font-family: 'Quicksand', sans-serif;
+        color: $pink;
+    }
+    a {
+        text-decoration: none;
+        color: #ffffff;
+        font-family: 'Quicksand',sans-serif;
+    }
+    button {
+        width: 100px;
+        padding: 5px 0;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        background: #ff9b4f; /* Old browsers */
+        background: -moz-linear-gradient(top,  #ff9b4f 0%, #ff7919 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff9b4f), color-stop(100%,#ff7919)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  #ff9b4f 0%,#ff7919 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  #ff9b4f 0%,#ff7919 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  #ff9b4f 0%,#ff7919 100%); /* IE10+ */
+        background: linear-gradient(to bottom,  #ff9b4f 0%,#ff7919 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9b4f', endColorstr='#ff7919',GradientType=0 ); /* IE6-9 */
+        &:hover{
+            opacity: .6;
+        }
+    }
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+/*
+ * Hide only visually, but have it available for screen readers: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before, .clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+.clearfix:after {
+    clear: both;
+}
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+@media print, (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    a, a:visited {
+        text-decoration: underline;
+    }
+    a[href]:after {
+        content: " (" attr(href)")";
+    }
+    abbr[title]:after {
+        content: " (" attr(title)")";
+    }
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+    a[href^="#"]:after, a[href^="javascript:"]:after {
+        content: "";
+    }
+    pre, blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+    thead {
+        display: table-header-group;
+        /* h5bp.com/t */
+    }
+    tr, img {
+        page-break-inside: avoid;
+    }
+    img {
+        max-width: 100% !important;
+    }
+    p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+    }
+    h2, h3 {
+        page-break-after: avoid;
+    }
+}

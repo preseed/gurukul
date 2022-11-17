@@ -1,0 +1,332 @@
+/*------------------------------------------------------
+
+	Type: FSA shortcode css
+	Author: UDTHEMES
+	Author URI: http://themeforest.net/user/udfrance
+
+/*------------------------------------------------------
+
+	CSS TOB: 
+	1. Columns
+
+		
+---------------------------------------------------------*/
+
+
+/*--------------------------------------------------------
+	
+	1.Content styling
+		Columns
+		Blockquotes
+		DopCaps
+		Highlights
+		Lists
+	2.Media
+	3.Ui-buttons
+	4.Ui-Accordions & Tabs
+	5.Ui-Pricing tables
+	6.Social
+	7.Maps
+	8.Misc
+	
+--------------------------------------------------------*/	
+
+
+
+/*--------------------------------------------------------
+	1.Content Styling
+--------------------------------------------------------*/
+
+	/*COLUMNS*/
+	
+	.column_one_half, .column_one_third{float:left;margin-right:4%;overflow:hidden; position:relative;margin-bottom:30px;}
+
+	
+		/* widths
+		-----------------------------*/	
+		.column_one_half{width:48%;}
+		.column_one_third{width:30.6666%;}
+		.last{margin-right:0; clear:right;}
+		
+		
+	
+	/*BLOCKQUOES*/	
+		
+	blockquote {float:left;margin:0 0 30px 0;padding:0 0 0 40px;}
+	
+		
+		/* styles
+		-----------------------------*/	
+		
+		
+			/*odd*/
+			
+			/*even*/
+
+		/*DROPCAPS*/
+		
+		
+		/*** HIGHLIGHTS ***/
+		strong { font-weight:bold; }
+		em { font-style:italic; }
+		
+		strong.darkGray {
+			color:#fff;
+			background:#111;
+			padding:0 3px;
+		}
+		
+		
+		strong.white {
+			color:#000;
+			background:#fff;
+			padding:0 3px;
+		}
+		
+		
+		strong.yellow {
+			color:#000;
+			background:#fcdc01;
+			padding:0 3px;
+		}
+		
+		
+		
+		strong.green {
+			color:#000;
+			background:#aadb14;
+			padding:0 3px;
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		/*** LISTS ***/
+		
+		ul {
+			float:left;
+			margin:0 20px 16px 0;
+			padding:0;
+			list-style:none;
+		}
+		
+		ul li {
+			margin-bottom:2px;
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+/*--------------------------------------------------------
+	2.Media
+--------------------------------------------------------*/
+
+
+
+/*--------------------------------------------------------
+	3.Ui-Buttons
+--------------------------------------------------------*/
+		
+
+
+		/* colors
+		-----------------------------*/
+
+
+		/* sizes
+		-----------------------------*/
+
+
+
+/*--------------------------------------------------------
+	4.Ui-Accordtions & Tabs
+--------------------------------------------------------*/
+
+		/* accordion */
+		
+			/*odd*/
+			
+			/*even*/
+		
+		/* tabs */
+		
+			/*odd*/
+			
+			/*even*/
+			
+		
+
+/*--------------------------------------------------------
+	5.Ui-Pricing Tables
+--------------------------------------------------------*/
+
+		/* pricing table
+		-----------------------------*/
+
+	
+		
+			/*odd*/
+			
+			
+			/*even*/
+		
+		
+		
+/*--------------------------------------------------------
+	6.Social
+--------------------------------------------------------*/
+
+	
+	/*ul.socialSmall li a.pinterest:hover{background:url(../images/social-sprite-small.png) 0 -44px no-repeat;}*/
+
+	 
+
+/*--------------------------------------------------------
+	7.Maps
+--------------------------------------------------------*/	
+
+/*--------------------------------------------------------
+	8.Misc
+--------------------------------------------------------*/	
+

@@ -1,0 +1,949 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+
+      name="viewport" />
+    <!--[if lte IE 7]><script src="lte-ie7.js"></script><![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" />
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script" />
+    <title>Preseed Ecell</title>
+    <meta content="We inspire ideas, faith and action right from the stage when you are a mere man or a mere woman with 'a will to do' something out of the ordinary."
+
+      name="description" />
+    <meta content="Preseed" name="author" />
+    <meta content="preseed, startup" name="keyword" />
+    <!--for Google -->
+    <meta content="We inspire ideas, faith and action right from the stage when you are a mere man or a mere woman with 'a will to do' something out of the ordinary."
+
+      name="description" />
+    <meta content="preseed,preseed culture,preseed ventures,todoed,myidealist "
+
+      name="keywords" />
+    <meta content="" name="author" />
+    <meta content="Preseed Ventures Private Limited" name="copyright" />
+    <meta content="Preseed" name="application-name" />
+    <!-- for Facebook -->
+    <meta content="Preseed" property="og:title" />
+    <meta content="article" property="og:type" />
+    <meta content="https://preseed.in/assets/logo_black_back.png" property="og:image" />
+    <meta content="https://culture.preseed.in" property="og:url" />
+    <meta content="We inspire ideas, faith and action right from the stage when you are a mere man or a mere woman with 'a will to do' something out of the ordinary."
+
+      property="og:description" />
+    <!-- for Twitter -->
+    <meta content="summary" name="twitter:card" />
+    <meta content="Preseed" name="twitter:title" />
+    <meta content="We inspire ideas, faith and action right from the stage when you are a mere man or a mere woman with 'a will to do' something out of the ordinary."
+
+      name="twitter:description" />
+    <meta content="https://preseed.in/assets/logo_black_back.png" name="twitter:image" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"
+
+type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"
+
+type="text/javascript"></script>
+    <link rel="stylesheet" href="foaw/css/fa-cleaned.css" />
+    <link href="img/ico/favicon_preseed.png" rel="shortcut icon" />
+    <link rel="stylesheet" href="icons.css" />
+    <link rel="stylesheet" href="css/epicslider-cleaned.css" />
+    <link rel="stylesheet" href="css/flexslider-cleaned.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox-1.3.4.css" />
+    <link rel="stylesheet" href="css/style-cleaned-main.css" />
+    <link rel="stylesheet" href="css/udt_media_queries-cleaned.css" />
+    <link rel="stylesheet" href="css/udt_shortcodes-cleaned.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <script src="js/common.js" type="text/javascript"></script>
+    <script src="js/contact.js" type="text/javascript"></script>
+    <script src="js/jquery.ajaxloading.js" type="text/javascript"></script>
+    <script src="js/jquery.epicslider.js" type="text/javascript"></script>
+    <script src="js/jquery.fancybox-1.3.4.pack.js" type="text/javascript"></script>
+    <script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
+    <script src="js/jquery.tweet.js" type="text/javascript"></script>
+    <script src="js/jquery.lazyload.js" type="text/javascript"></script>
+    <script src="js/jquery.mobile-touch-swipe-1.0.js" type="text/javascript"></script>
+    <script src="js/jquery.parallax-1.1.3.js" type="text/javascript"></script>
+    <script src="js/onepage.js" type="text/javascript"></script>
+    <script src="js/udt_shortcodes.js" type="text/javascript"></script>
+    <script src="js/waypoints.min.js" type="text/javascript"></script>
+    <!-- Le fav and touch icons -->
+	
+	
+	
+    <!--
+    <link rel="apple-touch-icon-precomposed" size="144x144" href="images/ico/apple-touch-icon-144-precomposed.png" />    <link rel="apple-touch-icon-precomposed" size="114x114" href="images/ico/apple-touch-icon-114-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png" />    -->
+    <link href="images/ico/apple-touch-icon-72-precomposed.png" size="72x72" rel="apple-touch-icon-precomposed" />
+    <link href="img/ico/favicon_preseed.png" rel="shortcut icon" />
+    <!--<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" />-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"
+
+      rel="stylesheet" />
+    <style type="text/css">
+    @media screen and (max-width: 780px) {
+        .handle_padding {
+            padding: 10px;
+        }
+    }
+    @media all and (min-width: 1400px) {
+        #teaser-1 {
+            -webkit-background-size: cover;
+            background-size: cover;
+            background-position: center;
+        }
+        #caption{
+        font-size:24px; 
+        position: absolute; 
+        top: 20px; 
+        left: 20px;
+         right: 20px;
+         z-index: 100000; 
+         text-align: center;
+         display:block;
+         margin: 25px auto;
+        }
+        #round-nav {
+            background-color: #FF2778;
+            width: 360px;
+            height: 360px;
+            z-index: 4;
+            border-radius: 100%;
+            margin-top: 180px;
+            margin-left: -180px;
+            left: 50%;
+            text-align: center;
+            position: absolute;
+        }
+        #round-nav,
+        #top-logo {
+            -webkit-transition: all 400ms;
+            -o-transition: all 400ms;
+            transition: all 400ms;
+        }
+        #top-logo {
+            position: relative;
+            top: 140px;
+            width: 300px;
+            height: auto;
+        }
+        #round-nav:hover {
+            cursor: pointer;
+            -webkit-transform: scale(1.13, 1.13);
+            -ms-transform: scale(1.13, 1.13);
+            -o-transform: scale(1.13, 1.13);
+            transform: scale(1.13, 1.13);
+        }
+        #round-nav:hover > * {
+            -webkit-transform: scale(.8849557, .8849557);
+            -ms-transform: scale(.8849557, .8849557);
+            -o-transform: scale(.8849557, .8849557);
+            transform: scale(.8849557, .8849557);
+        }
+    }
+    @media all and (max-width: 1399px) {
+        #teaser-1 {
+            -webkit-background-size: inherit;
+            background-size: inherit;
+            background-position: center;
+        }
+        #caption{
+        font-size:24px;
+        position: absolute; 
+        top: 20px; 
+        left: 20px;
+         right: 20px;
+         z-index: 100000; 
+         text-align: center;
+         display:block;
+         margin: 25px auto;
+        }
+        #round-nav {
+            background-color: #FF2778;
+            width: 360px;
+            height: 360px;
+            z-index: 4;
+            border-radius: 100%;
+            margin-top: 180px;
+            margin-left: -180px;
+            left: 50%;
+            text-align: center;
+            position: absolute;
+        }
+        #round-nav,
+        #top-logo {
+            -webkit-transition: all 400ms;
+            -o-transition: all 400ms;
+            transition: all 400ms;
+        }
+        #top-logo {
+            position: relative;
+            top: 140px;
+            width: 300px;
+            height: auto;
+        }
+        #round-nav:hover {
+            cursor: pointer;
+            -webkit-transform: scale(1.13, 1.13);
+            -ms-transform: scale(1.13, 1.13);
+            -o-transform: scale(1.13, 1.13);
+            transform: scale(1.13, 1.13);
+        }
+        #round-nav:hover > * {
+            -webkit-transform: scale(.8849557, .8849557);
+            -ms-transform: scale(.8849557, .8849557);
+            -o-transform: scale(.8849557, .8849557);
+            transform: scale(.8849557, .8849557);
+        }
+    }
+    @media all and (max-width: 719px) {
+    #caption{
+        font-size:21px;
+        position: absolute; 
+        top: 20px; 
+        left: 20px;
+         right: 20px;
+         z-index: 100000; 
+         text-align: center;
+         display:block;
+         margin: 25px auto;
+        }
+        #round-nav {
+            background-color: #FF2778;
+            width: 300px;
+            height: 300px;
+            z-index: 4;
+            border-radius: 100%;
+            margin-top: 230px;
+            margin-left: -150px;
+            left: 50%;
+            text-align: center;
+            position: absolute;
+        }
+        #round-nav,
+        #top-logo {
+            -webkit-transition: all 400ms;
+            -o-transition: all 400ms;
+            transition: all 400ms;
+        }
+        #top-logo {
+            position: relative;
+            top: 123.33333px;
+            width: 250px;
+            height: auto;
+        }
+        #round-nav:hover {
+            cursor: pointer;
+            -webkit-transform: scale(1.13, 1.13);
+            -ms-transform: scale(1.13, 1.13);
+            -o-transform: scale(1.13, 1.13);
+            transform: scale(1.13, 1.13);
+        }
+        #round-nav:hover > * {
+            -webkit-transform: scale(.8849557, .8849557);
+            -ms-transform: scale(.8849557, .8849557);
+            -o-transform: scale(.8849557, .8849557);
+            transform: scale(.8849557, .8849557);
+        }
+    }
+    @media all and (max-width: 475px) {
+    #caption{
+        font-size:18px;
+        position: absolute; 
+        
+        left: 10px;
+         right: 10px;
+         z-index: 100000; 
+         text-align: center;
+         display:block;
+         margin: 5px auto;
+        }
+        #round-nav {
+            background-color: #FF2778;
+            width: 150px;
+            height: 150px;
+            z-index: 4;
+            border-radius: 100%;
+            margin-top: 170px;
+            margin-left: -80px;
+            left: 60%;
+            text-align: center;
+            position: absolute;
+        }
+        #round-nav,
+        #top-logo {
+            -webkit-transition: all 400ms;
+            -o-transition: all 400ms;
+            transition: all 400ms;
+        }
+        #top-logo {
+            position: relative;
+            top: 56.6666666667px;
+            width: 125px;
+            height: auto;
+        }
+        #round-nav:hover {
+            cursor: pointer;
+            -webkit-transform: scale(1.13, 1.13);
+            -ms-transform: scale(1.13, 1.13);
+            -o-transform: scale(1.13, 1.13);
+            transform: scale(1.13, 1.13);
+        }
+        #round-nav:hover >  {
+            -webkit-transform: scale(.8849557, .8849557);
+            -ms-transform: scale(.8849557, .8849557);
+            -o-transform: scale(.8849557, .8849557);
+            transform: scale(.8849557, .8849557);
+        }
+        div#html-content1{
+                /*position: fixed;*/
+                display: block;
+                width: 360px;
+                height: 360px;
+                margin-left: -180px;
+                margin-top: -180px;
+        }
+        
+    }
+    @media only screen and (max-width: 479px){
+        .header {
+            display:block;
+            height:auto;
+        }
+	#atitscore {
+	    padding-top: 700px;
+	}
+	#tring2{
+	    margin: auto;
+	}
+    }
+
+    
+    .twitter-follow-button{
+    width:100% !important;
+    }
+
+    .hn-button{
+        width: 100px;
+        height: 20px;
+    }
+    
+    
+
+
+/* Add this attribute to the element that needs a tooltip */
+[data-tooltip] {
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+}
+
+/* Hide the tooltip content by default */
+[data-tooltip]:before,
+[data-tooltip]:after {
+  visibility: hidden;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Position tooltip above the element */
+[data-tooltip]:before {
+    position: absolute;
+    bottom: 150%;
+    left: 50%;
+    margin-bottom: 5px;
+    margin-left: -80px;
+    padding: 7px;
+    width: 160px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius:    3px;
+    border-radius:         3px;
+    background-color: #2095c0;
+    background-color: #2095c0;
+    color: #fff;
+    content: attr(data-tooltip);
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+/* Triangle hack to make tooltip look like a speech bubble */
+[data-tooltip]:after {
+    position: absolute;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -5px;
+    width: 0;
+    border-top: 5px solid #000;
+    border-top: 5px solid hsla(0, 0%, 20%, 0.9);
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    content: " ";
+    font-size: 0;
+    line-height: 0;
+}
+
+/* Show tooltip content on hover */
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+    visibility: visible;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+}
+    .dottedLine { line-height: 150%; }
+    /*the white color test*/
+/*a{*/
+/*    color:#cccccc;*/
+/*}*/
+
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"
+
+type="text/javascript"></script>
+    <!-- script for google analytics -->
+    <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-45882697-3', 'auto');
+          ga('send', 'pageview');
+
+    </script>
+  </head>
+  <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&appId=567797739996281&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    <script type="text/javascript">
+window.twttr = (function (d, s, id) {
+  var t, js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src= "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+  return window.twttr || (t = { _e: [], ready: function (f) { t._e.push(f) } });
+}(document, "script", "twitter-wjs"));
+</script> <div id="fb-root"></div>
+    <script type="text/javascript">
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=1453247728270397&version=v2.0";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <script type="text/javascript">
+    var isMobile = false;
+
+    if (navigator.userAgent.match(/Android/i) ||
+        navigator.userAgent.match(/webOS/i) ||
+        navigator.userAgent.match(/iPhone/i) ||
+        navigator.userAgent.match(/iPad/i) ||
+        navigator.userAgent.match(/iPod/i) ||
+        navigator.userAgent.match(/BlackBerry/i)) {
+
+        isMobile = true;
+
+    }
+
+    $(window).load(function() {
+
+        //call slider
+        $('.epicSlider').epicSlider({
+
+            loop: false, //Boolean: whether slideshow should loop or not 
+            slideShow: true, //Boolean: use slideshow or not
+            autoPlay: true, //Boolean: autoplay uplon load or not
+            slideShowInterval: 4000, //Integer: slideshow cycling speed, in milliseconds
+            transitionSpeed: 1000, //Integer: transitions speed, in milliseconds
+            startSlide: 0, //Integer: starts at 0
+            shuffleSlides: false, //Boolean: shuffle slides or not
+            easing: 'easeInOutQuint', //String: easing method - see http://jqueryui.com/demos/effect/easing.html
+            fx: 'leftToRight', //String: none, fade, leftToRight, topToBottom 
+            fxmobile: 'leftToRight', //String: mobile effect -  none, fade, leftToRight, topToBottom 
+            pattern: true //Boolean: add pattern or not
+
+        });
+
+
+    });
+    </script>
+    <script type="text/javascript">
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId: '{your-app-id}',
+            xfbml: true,
+            version: 'v2.0'
+        });
+    };
+
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {
+            return;
+        }
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script> <span class="loading style-3"></span>
+    <!--start wrapper-->
+    <div id="wrapper">
+      <!--start header-->
+      <div class="header header-main">
+        <div class="inner">
+          <div class="logo-container">
+            <div class="logo"> <a class="navigateTo" href="https://preseed.in">
+                <img alt="" title="Home" style="PADDING-TOP: 10px" src="images/Nnavbarlogo.png" />
+              </a>
+              <!--<ul class="navigation">-->
+              <!--<li>--> <a href="https://apply.preseed.in" class="navigateTo hire">Hiring</a>
+              <!--</li>-->
+              <!--</ul>   --> </div>
+          </div>
+          <!--mobileMenu toggle-->
+          <div class="mobileMenuToggle"> </div>
+          <!--navigation-->
+          <ul style="display: none;" class="navigation">
+            <li><a href="https://preseed.in" class="navigateTo">Home</a> </li>
+            <li><a href="#we-do" class="navigateTo">We Do</a> </li>
+            <li><a href="#We-Are" class="navigateTo">We Are</a> </li>
+            <!-- <li><a href="http://backus.preseed.in/" class="navigateTo">Back Us</a> -->
+            </li>
+            <li class="hov"><a target="_blank" href="https://medium.com/@nishchal/publications"
+
+                title="Medium"><!--<img src="images/gallery/me3.png"   width="18px" class="hov"  style="margin-top:40%"/>--></a>
+            </li>
+            <li> </li>
+            <li> </li>
+            <li> </li>
+          </ul>
+        </div>
+      </div>
+      <!--end header-->
+      <!--start homepage-->
+     
+      
+
+     
+          
+      <div style="background: url(images/gallery/openhack.jpg) no-repeat center center scroll ; -webkit-background-size: 100% 100%; background-size:cover; height:auto;"
+
+        class="teaser section page" id="We-Inspire">
+        <div style="margin-top:0.05% !important;margin: auto;text-align: center;width:100%;text-align:center;"
+
+          class="teaser-title">
+          <h4 style="margin:150px auto 100px;">WE INSPIRE <br>
+             <font size="5"> <span style="display:block;margin-top:100px;width:80%;max-width:800px;margin-left: auto;margin-right:auto;">Only for Premium users: to use our premium service, subscribe to our service Preseed Mind.<br><br>
+                <a style=" text-decoration:underline; border-bottom=3px; font-size:26px;font-weight:100;color:rgb(255,0,90)"
+
+              target="_blank" href="https://www.facebook.com/pg/thepreseed/photos/?tab=album&album_id=439180356121264">
+              <span style="padding-left:50px;padding-right:50px;color:#FFFFFF;font-size:24px;font-weight:300"
+
+                class="btn btn-large btn-success">GALLERY</span> </a> <br><br>
+				
+				<p><a href="#">Log in to our web app >> </a>(Coming Soon)</p>
+
+              </span> </font> </h4>
+        </div>
+      </div>
+      <!--start page 1-->
+      <div class="page odd section" id="we-do">
+        <!--start p1 content-->
+        <div style="display: block;max-width:1200px;" class="content clearfix">
+          <!--section title-->
+          <div class="section-title">
+            <h3>WE <span>DO</span> </h3>
+
+          </div>
+		  
+		  <h6> <span>Preseedapp is  web forum which will enable millions of our non premium member to use our network effect due to this app, to harness the possibility of having very intelligent people from all over the world helping set the ground work for seeing the vision, as they propose it over dialogues with you, right there, very objectively.<br><br>
+		  
+		  This articulation of ideas and its various key questions in the very words, is everything we wish you start with. Einstein said, and I don't quote, "If you can't say it simply, you don't know it enough. So know it, as best, and as simply as you can<br><br>
+
+          In this forum, from an idea articulation to the way the business, in form of a slide deck should be seen even before getting attempted. This app is all about the thought, as if the business, but just the thought. The story of it. For stories sell, before ideas do. <br>
+		  
+		  </span> </h6>
+		  
+		  
+          <div style="width:100%;display:block;margin:auto;text-align:center;" class="round-thumbs">
+            <div style="display:inline-block;margin:auto;width:100%;float:none;max-width:500px;"
+
+              class="column_one_half team">
+              <div class="round-thumb-container">
+                <div class="round-thumb"><img alt="Entrepreneur Lab" src="images/gallery/carpe.jpg"
+
+                        class="lazy" />
+                    title=""> <span></span> </a> </div>
+              </div>
+              <a href="javascript:void(0)">
+                <h5 style="line-height: 200%;">
+                  <br>
+                  <u style="color: #000;"> Our Future Plan<!--  <i class="fa fa-video-camera"></i> --></u></h5>
+              </a>
+              <!-- <h6> <span>A platform for collaboration on an idea as a thought. If you have a profound idea of your own that you would like to brainstorm forward with our users from all over the world, subscribe to our news letter. <a href="https://weblab.preseed.in/projects/slidedeck/" target="_blank">Slide Deck</a> will be an important component of the PreseedApp.</span> </h6> -->
+              <h6> <span>We are planning a 3000 students hostel space in the lap of Himalayan nature to address students who want to drop out of their colleges or have one year to spare to live and travel the Himalayas with us.</span> </h6>
+              </div>
+            <!-- SK Circle down starts here -->
+            <div id="tring2" style="display:inline-block;width:100%;float:right;max-width:500px;"
+
+              class="column_one_half team">
+              <div class="round-thumb-container">
+                <div class="round-thumb a2"><img alt="Entrepreneur Lab" src="images/gallery/pre-shop.png" width="250" height="100%" class="lazy" /> </span>
+                    title="">  </div>
+              </div>
+              <a href="javascript:void(0)">
+                <h5 style="line-height: 200%;"><!-- <span style="color: #fff; background: #ff005a; font-weight: bold; font-size: 15px; padding: 5px 7px;">JOIN</span> -->
+                   <br>
+                  <u style="color: #000;">For Now</u></h5>
+              </a>
+              <h6><span>This feature enables startups and other ideas to crowd source investment, by way of preorders. However, they are free to sell if they already have goods and services ready. <br>
+			  
+			  </span>
+                </h6>
+              <!--social networks--> </div>
+            <!-- SK Circle ends here--> </div>
+			 
+			<div id="subscribe_text">
+			
+			<h6 align="center"><span>This feature can change the way startups or ideas have been raising money at a scale larger then what kick starter enabled. (Your dashboards for <a href="https://shop.preseed.in">shop.preseed.com</a> are coming soon). Here anything can be ordered, so long as you have a powerful story.</span></h6>
+			 
+			</div>
+			
+			
+			
+		 
+			
+            <div id="subscribe_text">
+            <center>
+                <p>We have researched for years, the matter of enabling someone with a mere idea, over a democratic web forum. One may say, if you were an idea, just an idea, how should you have been profiled just at this stage, such that, who ever you interact with, has clearer insight into what you are trying to become. Isn't that what people communicating with the startup know.</p>
+                <!-- <center> 
+                <a style="color:#ffffff; " target="_blank" href="https://justbuild.preseed.in"
+              title="Subscribe">
+                <button style="padding-right:61px;padding-left:61px" class="btn btn-twitter btn-large btn-succe">Subscribe
+              to Preseed Newsletter</button></a></center> -->
+            </center>
+            </div>
+
+          <div style="max-width:1200px;display:block;margin:auto;text-align:center;"
+
+            class="clearfix"></div>
+        </div>
+        <!-- p1 content --> </div>
+      <!--start page-->
+	  
+	
+        
+	  
+	  
+	  
+
+      <div class="page even section" id="We-Are">
+        <div style="max-width:1200px;margin:auto;display: block;" class="content clearfix">
+          <div class="section-title">
+            <h3>We <span>Are</span> </h3>
+            <br />
+          </div>
+          <h6 align="justify" style="width:90%;max-width:800px;display:block;margin:auto;">We believe that one of the most understated reasons, or largely a non-stated reason to fail is - to not start. Leave the matter of success and failure to perseverance; there is nothing more to success and failure. This is the fundamental the ideology of the PreseedAppis founded upon. <br><br>
+
+If we manage to give you a start, we have done for you what we have startedPreseedApp to do. To do so, we are building a world class system through this app, to help you lay a long lasting foundation for planting your seed, your idea. </h6>
+          <br />
+          <!-- <h6 align="center" style="width:90%;max-width:800px;display:block;margin:auto;">
+            <span>We believe that one of the most understated reasons, or
+              largely a non-stated reason to fail is - to not start. Leave the
+              matter of success and failure to perseverance; there is nothing
+              more to success and failure. <br />
+              <b style="font-weight: bold; font-size: 20px;">This is the
+                fundamental</b> the ideology of the PreseedApp <b style="font-weight: bold; font-size: 20px;">is
+                founded upon.</b> </span></h6> -->
+          <br />
+          <div align="center" class="glyph">
+            <!-- <h6 align="center" style="width:90%;max-width:800px;display:block;margin:auto;">
+              <span>If we manage to give you a start,we have done for you what
+                we have started PreseedApp to do.</span>
+              </h6> -->
+            <div style="width:90%;display: block;margin:50px auto 0;" id="medium-embed">
+              <script type="text/javascript" src="https://static.medium.com/embed.js" async=""></script> <a href="https://medium.com/the-preseed" ;="" data-collapsed="true"
+
+                class="m-collection">The Preseed </a> </div>
+          </div>
+        </div>
+        </div>
+
+      <!--start teaser-->
+      <div style="background-image: url(images/gallery/hippies.jpg);-webkit-background-size: 100% 100%; background-size:100% ;background-repeat: no-repeat;height:auto;background-position:center;"
+
+        class="teaser" id="teaser-1">
+        <div style="margin:auto;height:auto;overflow:hidden;display: block;" class="teaser-title">
+          <h6 style="display: block;width: 90%;max-width: 1200px;margin: 150px auto 100px;">
+            <strong class="white"> <span style="text-transform:uppercase;">Here
+                everyone is building upon an idea or an ideology</span> </strong>
+            <br />
+            <br />
+            <strong style="-ms-word-break: break-word;word-break:break-word;" class="green">This
+              is our (COUNTER)CULTURE where people BUILD before they learn, earn
+              or burn</strong> <br />
+            <br />
+            <br />
+            <center>
+            <!-- <a style=" text-decoration:underline; border-bottom=3px; font-size:26px;font-weight:100;color:rgb(255,0,90)"
+
+              target="_blank" href="https://yoga.preseed.in/">
+              <span style="padding-left:50px;padding-right:50px;color:#FFFFFF;font-size:24px;font-weight:300"
+
+                class="btn btn-large btn-success">Preseed Yoga</span> </a> -->
+            <div align="center" class="glyph">
+                <a target="_blank" href="https://team.preseed.in/" title="Team">
+                <div align="center" data-icon="" aria-hidden="true" class="fs1" style="font-size:40px;"></div>
+                </a>
+                <a target="_blank" style="padding-top:10px;font-size:15px; background: #ff005a; font-weight: normal; color: #fff; border-radius: 2px; padding: 10px 12px;" href="https://team.preseed.in/">OUR TEAM</a> <br />
+                <br>
+            </div>
+          </center>
+            </h6>
+          <div style="display:block;position:relative;" class="section-button">
+            <a href="#About" class="page-up navigateTo"></a> </div>
+        </div>
+        <!--section-button--> </div>
+      <!--end teaser-->
+      <div class="page even section" id="contact">
+        <div style="max-width:1200px;margin:auto;" class="content clearfix">
+          <!--section title-->
+          <div class="section-title">
+            <h3>CONTACT <span>US</span> </h3>
+            <h6>START A CONVERSATION <span>WE'LL TAKE IT FORWARD</span> </h6>
+          </div>
+          <div style="block;max-width:1000px;margin:50px auto;text-align:center;"
+
+            id="three-button">
+            <div style="display:inline-block;float:none;width:auto;" class="column_one_third">
+              <a style="color:#ffffff; " target="_blank" href="https://www.facebook.com/messages/thepreseed"
+
+                title="Facebook">
+                <center> <button style="padding-left:83px;padding-right:83px;padding:0;width:210px;height:65px;text-align:center;"
+
+                    class="btn btn-twitter btn-large btn-succes"><i class="fa fa-facebook"></i> 
+                     Message </button> </center>
+              </a> </div>
+            <div style="display:inline-block;float:none;width:auto;" class="column_one_third">
+              <a style="color:#ffffff; " target="_blank" href="https://twitter.com/nishchal"
+
+                title="Twitter">
+                <center> <button style="padding-right:61px;padding-left:61px;padding: 0;width: 210px;height: 65px;text-align: center;"
+
+                    class="btn btn-twitter btn-large btn-succe"><i class="fa fa-twitter"></i> 
+                     @nishchal</button> </center>
+              </a> </div>
+            <div style="display:inline-block;float:none;width:auto;" class="column_one_third">
+              <a style="color:#ffffff; " target="_blank" href="mailto:love@preseed.in"
+
+                title="Email">
+                <center> <button style="padding: 0;width: 210px;height: 65px;text-align: center;"
+
+                    class="btn btn-twitter btn-large btn-succ"><i class="fa fa-envelope-o"></i> 
+                      love@preseed.in</button> </center>
+              </a> </div>
+                <center>
+          <h6 align="center" style="width:90%;max-width:800px;display:block;margin:auto;">
+            <span>Or Whatsapp us at: <br />
+              <b style="font-weight: bold; font-size: 20px;">+91 70521 18278 </b></span></h6>
+          </center>
+           </div>
+          
+          <center>
+            <h5 style="text-align:center;"> <span>'COZ CONTACT FORMS ARE SO
+                1990s</span> </h5>
+          </center>
+          <br />
+          <br />
+          <!-- <center> <a style="color:#ffffff; " target="_blank" href="https://angel.co/preseed" title="MeetUs">
+              <center> <button style="padding-right:61px;padding-left:61px" class="btn btn-twitter btn-large btn-succe">Meet us on Angel list <img
+                    width="25" height="25" src="images/angellist.png" />
+                  </button></center>
+            </a> </center>
+            <br> -->
+            <center>
+            <h6 class="small_headings">This will reveal our taste to you.</h6>
+            <a style=" text-decoration:underline; border-bottom=3px; font-size:26px;font-weight:100;color:rgb(255,0,90)"
+
+              target="_blank" href="https://www.pinterest.com/thepreseed/">
+              <span style="padding-left:50px;padding-right:50px;color:#FFFFFF;font-size:24px;font-weight:300"
+
+                class="btn btn-large btn-success">PINTEREST</span> </a> 
+                </center>
+        </div>
+        <!--end p3 content--> </div>
+      <div style="background-image: url(images/gallery/bkimg.jpg);-webkit-background-size: 100% 100%; background-size:100% 100% ;background-repeat: no-repeat;opacity:0.9;filter:alpha(opacity=90);"
+
+        class="teaser section page teaser31" id="Patron">
+        <div style="display: block;height:100%;" class="teaser-title">
+          <h6 style="display:block;width:90%;margin: 100px auto;text-align: center;max-width:1000px;">
+            <div style="-ms-word-break: break-word;word-break:break-word;"> <strong
+
+                style="display: inline-block;height:auto" class="darkGray"> <span>
+                  <strike>inventor.visionary.musician.engineer.entrepreneur.thinker</strike>
+                </span> </strong> <strong style="display: inline-block;" class="yellow">ARTIST</strong>
+              <br />
+            </div>
+            <br />
+            <strong style="display: block;" class="darkGray"> <span>WE ARE ON A
+                JOURNEY TO INSPIRE A WHOLE GENERATION</span> </strong> <a target="_blank"
+
+              href="https://link.medium.com/cem81FBgaS" style="font-size:44px; float:inherit; text-decoration:none; border-bottom:3px;">
+              <span style="padding: 20px;margin-top: 50px;display: inline-block;margin-left: auto;margin-right: auto;font-size: 25px;text-shadow: 0 0 2px #fff;"
+
+                class="btn btn-large btn-primary custombtn patronizebtn">BACK US</span>
+            </a> <br>
+            <br />
+            <span style="background-color: #111;font-size: 20px;"> Or </span>
+            <br>
+            <span style="background-color: #111;font-size: 20px;font-family: OCR A Std, monospace ">Sponsor a stay <br>For a worthy <br>entrepreneur 
+            </span>
+          </h6>
+        </div>
+        <!--section-button-->
+        <div class="section-button"> <a href="#Media-Network" class="page-up navigateTo"></a>
+        </div>
+      </div>
+      <!--end teaser-->
+      <hr style="thick:3px;color:white;border:0" />
+      <!--media query for lftblwftr starts here -->
+      <style>
+    @media only screen and (min-width:750px){
+        ul#lftblwftr{
+            padding-left:8%;
+        }
+        ul#lftblwftr li a{
+            color: #cccccc;
+        }
+        ul#lftabvftr li a{
+            color: #cccccc;
+        }
+    }
+    
+    @media only screen and (max-width: 1025px)
+        #leftfooter a {
+            color: #cccccc;
+    }
+</style>
+      <div class="footerr">
+        <div style="padding:4%;" id="leftfooter">
+          <ul id="lftblwftr">
+            <li><a href="http://apply.preseed.in" class="hire">We are Hiring!</a></li>
+            <li> <br />
+            </li>
+            <li><a href="http://preseedprints.com/" class="navigateTo">Shop</a></li>
+            <li> <br />
+            </li>
+            <li><a href="http://preseed.in" id="preseed_home">Home</a></li>
+            <li><a style="font-size:14px;" target="_blank" href="https://medium.com/the-preseed/faqs-about-preseed-7c2a803c13f5">FAQ</a></li>
+            <li> <br />
+            </li>
+            <li><a style="font-size:14px;" target="_blank" href="http://team.preseed.in/">Team</a></li>
+            <li> <br />
+            </li>
+            <li><a style="font-size:14px;" target="_blank" href="https://medium.com/the-preseed/about-preseed-a4836cfaa08b">About
+                Us</a></li>
+            <li><a target="_blank" style="font-size:14px;" href="http://labs.preseed.in/">Labs</a></li>
+            <li><a target="_blank" style="font-size:14px;" href="http://startups.preseed.in/">Startups</a></li>
+            <li><a target="_blank" href="http://culture.preseed.in/media">Infotainment</a>
+            </li>
+          </ul>
+        </div>
+        <div style="padding:4%;" id="rightfooter">
+          <ul style="margin:0" id="rhtftr">
+            <li><iframe frameborder="0" allowtransparency="true" style="border:none; overflow:hidden; width:100%; height:20px;"
+
+                scrolling="no" src="https://www.facebook.com/plugins/like.php?href=https://www.facebook.com/thepreseed&amp;width=210px&amp;layout=button&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=80&amp;"></iframe><br />
+            </li>
+            <li><a style="font-size:0.8vw;font-size:1.6vh; width:100%;" data-lang="en"
+
+                data-show-count="false" href="https://twitter.com/thepreseed" class="twitter-follow-button">Follow
+                @thePreseed </a> </li>
+            <!--the extra links will start here-->
+            <li style="display:inline-block">
+              <!--<a title="Medium" style="padding:10px;"  href="https://medium.com/@nishchal/publications" target="_blank"><!--<img src="images/gallery/me3.png"   width="18px" class="hov"  style="margin-top:40%"/>--><!--</a>-->
+              <br />
+            </li>
+            <li style="padding-left:10px; display:inline-block">
+              <!--<a title="Tumblr" href="http://blog.preseed.in" target="_blank" data-icon="" style="font-size:16px;color:#cccccc;"></a>-->
+            </li>
+            <li style="padding-left:10px; display:inline-block">
+              <!--<a title="Facebook" href="http://www.facebook.com/thepreseed" target="_blank" data-icon="" style="font-size:16px;color:#cccccc;"></a>-->
+            </li>
+            <li style="padding-left:10px; display:inline-block">
+              <!--<a title="Twitter" href="http://twitter.com/thepreseed" target="_blank" data-icon="" style="font-size:16px;color:#cccccc;"></a>-->
+            </li>
+          </ul>
+        </div>
+        <div style="clear:both;"> </div>
+      </div>
+      <!--end wrapper-->
+      <div style="background:#000000;">
+        <center>
+          <p style="text-align:center; background:#000000"><a style="color:#ff005a;text-decoration:none;font-size:14px;"
+
+              title="" target="_blank" href="http://preseed.in/legal"> Copyright
+              © 2016 Preseed Ventures Pvt. Ltd. | All Rights Reserved</a><br />
+          </p>
+        </center>
+      </div>
+      <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-1930971-6']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+      <!--Start of Tawk.to Script-->
+      <script type="text/javascript">
+    var $_Tawk_API = {},
+        $_Tawk_LoadStart = new Date();
+    (function() {
+        var s1 = document.createElement("script"),
+            s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/53bb002a488d9fc54f00015b/default';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+    })();
+    </script>
+      <script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	
+	  ga('create', 'UA-45882697-3', 'auto');
+	  ga('send', 'pageview');
+	
+	</script>
+      <!--End of Tawk.to Script-->
+    </div>
+	
+	 
+  
+  </body>
+</html>

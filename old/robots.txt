@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /ver1
+Disallow: /0.1
+Disallow: /fonts

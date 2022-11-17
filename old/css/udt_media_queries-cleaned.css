@@ -1,0 +1,429 @@
+/*------------------------------------------------------
+
+	Theme Name: ... - version 1.0
+	Type: Responsive framework
+	Author: unlimitDesign
+	Author URI: http://themeforest.net/user/udfrance
+
+------------------------------------------------------*/
+
+/*Desktop Layout+
+
+-----------------------------------------------*/
+
+
+@media only screen and (min-width: 1199px)  {
+
+	/*----------------------------
+	ii.-- Header
+	-----------------------------*/
+	
+		/* main menu
+		----------------------------*/
+
+		.header ul.navigation{display:table !important;}
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+
+	/*----------------------------
+	i.-- Page
+	-----------------------------*/
+	
+	.homepage,.page{position: inherit;}
+	.page .content{max-width:870px;margin:auto;position:relative;}
+	
+	/*----------------------------
+	ii.-- Header
+	-----------------------------*/
+
+	/*homepage*/
+	.logo-homepage {background-attachment: inherit; position:absolute;}
+
+	/*inner pages*/
+	.header {display:block;}
+	.header .inner{max-width:870px;margin:auto;}
+	
+	
+		/* main menu
+		----------------------------*/
+
+		.header ul.navigation{display:table !important;}
+	
+
+	/*----------------------------
+	ii.-- Content
+	-----------------------------*/	
+
+	/*portfolio
+	----------------------------*/
+
+	/*navigation*/
+	
+	/*project-display*/
+	
+		/*media & info*/
+
+	
+	/*blog
+	----------------------------*/
+	
+
+	
+	/*epic slider nav
+	-----------------------------*/
+	
+	.epicSlider.theme-default #epic-navigation{position:absolute;}
+	
+	/*positioning & widths*/
+
+
+
+}
+
+@media only screen and (max-width: 768px) {
+	
+	/* responsive tabs */
+	
+	/* responsive pricing tables */
+}
+
+/*Mobile Layout: Landscape Container width:768px
+
+-----------------------------------------------*/
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+
+
+	/*----------------------------
+	i.-- Page
+	-----------------------------*/
+	
+	.homepage,.page{position: inherit;}
+	.page .content{max-width:640px;padding-bottom:100px;}
+		
+	/*----------------------------
+	ii.-- Header
+	-----------------------------*/
+	
+	/*homepage*/
+	.logo-homepage {background-attachment: inherit; position:absolute;}
+
+	/*inner pages*/
+	.header {height:auto;display:block;}
+	.header .inner{max-width:930px;margin:auto;}
+	.header .logo-container{position:relative;left:50%;margin-left:-57.5px; float:auto;margin-bottom:10px;}
+	
+		/* main menu
+		----------------------------*/
+
+		.header .inner ul.navigation{width:100%; text-align: center;margin:0px;padding-bottom:8px;display:table !important;}
+		.header .inner ul.navigation li{ float: none !important; display: inline;}	
+
+	/*----------------------------
+	ii.-- Content
+	-----------------------------*/	
+	
+	/*about
+	----------------------------*/
+	
+	/*service breakdown*/
+
+	/*portfolio
+	----------------------------*/
+
+	/*navigation*/
+	
+	/*projects*/
+	
+	/*project-display*/
+	
+		/*media & info*/
+
+	
+	/*thumb-structure*/
+	
+	
+	/*blog
+	----------------------------*/
+	
+
+	
+	
+	
+	/*contact
+	----------------------------*/	
+	
+		/*form elements
+		----------------------------*/	
+		textarea {width:100%;}
+
+
+	/*epic slider nav
+	-----------------------------*/
+	
+	.epicSlider.theme-default #epic-navigation{position:absolute;}
+	
+	
+	/*positioning & widths*/
+	
+	
+	
+
+
+}
+
+
+/*Mobile Layout: Landscape Container width:480px
+
+-----------------------------------------------*/
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+
+
+	/*----------------------------
+	i.-- Page
+	-----------------------------*/
+	
+	.homepage,.page{position: inherit;}
+	.page .content{max-width:420px;padding-bottom:100px;}
+		
+	/*----------------------------
+	ii.-- Header
+	-----------------------------*/
+	
+	/*homepage*/
+	.logo-homepage{width:150px;height:150px;margin:-75px 0 0 -75px;position:absolute;background-attachment:inherit;}
+
+	/*inner pages*/
+	.header {height:auto;display:block;}
+	.header .inner{max-width:930px;margin:auto;}
+	.header .logo-container{position:relative;left:50%;margin-left:-57.5px; float:auto;}
+	
+		/* main menu
+		----------------------------*/
+
+		.header .inner ul.navigation{float: left; text-align: center; width: 100%;margin-top:0px;padding-bottom:5px; display:none;line-height:20px;}
+		.header .inner ul.navigation li{margin:10px 0; float:none !important;}
+		.header .inner ul.navigation li:first-child{margin-top:0px;}
+		.header .inner ul.navigation li:last-child{padding-right:10px;}
+	
+	
+	/* mobile menu toggle
+	----------------------------*/	
+		
+	.header .inner .mobileMenuToggle{display:block;}
+
+	/*----------------------------
+	ii.-- Content
+	-----------------------------*/	
+	
+	/*section title + teasers
+	----------------------------*/
+	
+	.section-title{padding-top:50px;}
+	
+	
+	/*about
+	----------------------------*/
+	
+	/*service breakdown*/
+
+
+	/*portfolio
+	----------------------------*/
+
+	/*navigation*/
+	
+	/*projects*/
+	
+	/*project-display*/
+	
+		/*media & info*/
+	
+	
+	/*thumb-structure*/
+	
+	/*blog
+	----------------------------*/
+	
+	
+	/*odd*/
+	
+	/*even*/
+		
+	
+	/*contact
+	----------------------------*/	
+	
+		/*form elements
+		----------------------------*/	
+		textarea {width:100%;}
+		
+
+	/*--------------------------------------------------------
+	TYPOGRAPHY & LINKS
+	--------------------------------------------------------*/
+
+	/*section title*/
+	.section-title h3,.section-title h6{margin:0;}
+	.section-title h3{font-size:45px;line-height:45px; text-align:center;}
+	.section-title h6{font-size:25px;line-height:25px; text-align:center;}
+	h1{font-size:32px;line-height:32px;}
+	h2{font-size:30px;line-height:30px;}
+	h3{font-size:28px;line-height:28px;}
+	h4{font-size:26px;line-height:26px;}
+	h5{font-size:24px;line-height:24px;}
+	h6{font-size:22px;line-height:22px;}
+	
+	
+	/*epic slider nav
+	-----------------------------*/
+	
+	.epicSlider.theme-default #epic-navigation{position:absolute;bottom:10px;left:50%;margin-left:-41px; width:82px;height:40px;}
+	.epicSlider.theme-default #epic-navigation.allcontrols{width:124px;left:50%;margin-left:-65px; } /*sum of all three buttons*/
+	
+	/*positioning & widths*/
+		
+	/*background*/
+	
+	/*target specific*/
+		
+		
+	/*accordions and tabs*/
+	blockquote { width:370px !important; margin-right:0 !important; }
+
+}
+
+/*Mobile Layout: Portrait Container width:320px
+
+-----------------------------------------------*/
+
+@media only screen and (max-width: 479px){
+
+	/*----------------------------
+	i.-- Page
+	-----------------------------*/
+	
+	.homepage,.page{position: inherit;}
+	.page .content{max-width:290px;padding-bottom:100px;}
+
+	/*----------------------------
+	ii.-- Header
+	-----------------------------*/
+	
+	/*homepage*/
+	.logo-homepage{width:150px;height:150px;margin:-75px 0 0 -75px;position:absolute;background-attachment:inherit;}
+	
+	/*inner pages*/
+	.header {height:auto;display:block;}
+	.header .inner{max-width:930px;margin:auto;}
+	.header .logo-container{position:relative;left:50%;margin-left:-57.5px; float:auto;}
+	
+		/* main menu
+		----------------------------*/
+
+		.header .inner ul.navigation{float: left; text-align: center; width: 100%;margin-top:0px;padding-bottom:5px; display:none; line-height:20px;}
+		.header .inner ul.navigation li{margin:10px 0; float:none !important;}
+		.header .inner ul.navigation li:first-child{margin-top:0px;}
+		.header .inner ul.navigation li:last-child{padding-right:10px;}
+	
+	
+	/* mobile menu toggle
+	----------------------------*/	
+		
+	.header .inner .mobileMenuToggle{display:block;}
+
+		
+	/*----------------------------
+	iii.-- Content
+	-----------------------------*/	
+	
+	/*section title + teasers
+	----------------------------*/
+	
+	.section-title{padding-top:50px;}
+	
+	
+	/*about
+	----------------------------*/
+	
+	/*service breakdown*/
+	
+
+	/*portfolio
+	----------------------------*/
+	
+	/*navigation*/
+	
+	/*projects*/
+
+	/*project-display*/
+		
+		/*media & info*/
+	
+	
+	
+	/*thumb-structure*/
+	/*.folio-thumb-container{width:30.666666%;position:relative;margin:0 0 18px 0;float:left;border-radius:200px;padding:0 1.33% }*/
+/*two cols*/	
+	
+	/*blog
+	----------------------------*/
+	
+
+
+	
+	/*odd*/
+	
+	/*even*/
+	
+	
+	
+	/*contact
+	----------------------------*/	
+	
+		/*form elements
+		----------------------------*/	
+		textarea {width:100%;}
+	
+	/*--------------------------------------------------------
+	TYPOGRAPHY & LINKS
+	--------------------------------------------------------*/
+
+	/*section title*/
+	.section-title h3,.section-title h6{margin:0;}
+	.section-title h3{font-size:45px;line-height:45px; text-align:center;}
+	.section-title h6{font-size:25px;line-height:25px; text-align:center;}
+	h1{font-size:32px;line-height:32px;}
+	h2{font-size:30px;line-height:30px;}
+	h3{font-size:28px;line-height:28px;}
+	h4{font-size:26px;line-height:26px;}
+	h5{font-size:24px;line-height:24px;}
+	h6{font-size:22px;line-height:22px;}
+	
+
+	/*epic slider nav
+	-----------------------------*/
+	
+	.epicSlider.theme-default #epic-navigation{position:absolute;bottom:10px;left:50%;margin-left:-41px; width:82px;height:40px;}
+	.epicSlider.theme-default #epic-navigation.allcontrols{width:124px;left:50%;margin-left:-65px; } /*sum of all three buttons*/
+	
+	/*positioning & widths*/
+		
+	/*background*/
+	
+	/*target specific*/
+	
+	
+	
+	/*shortcodes*/
+	.column_one_half, .column_one_third{width:100%;}
+		/*.last{margin-right:0 !important; clear:right;}*/
+	
+	
+	/*accordions and tabs*/
+	blockquote { width:250px !important; margin-right:0 !important; }
+
+}

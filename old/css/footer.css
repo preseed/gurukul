@@ -1,0 +1,143 @@
+@media only screen and (max-width:769px)
+{
+
+	.footerr{
+	width:99% !important;
+	
+	
+	}
+	
+	.footerr a{
+	font-size:10px;
+	}
+
+	.teaser{
+	
+	background:url('images/gallery/hippies1.png') no-repeat center center noscroll !important;
+	-webkit-background-size: 100% 100%; background-size:100% 100% ;background-repeat: no-repeat;height:auto;
+	}
+	
+	.teaser31{
+	background:url(../images/gallery/teaser-31.png) no-repeat  center  center noscroll !important;
+	-webkit-background-size: 100% 100%; background-size:100% 100% ;background-repeat: no-repeat;height:auto;
+	}
+	
+	#leftfooter a{
+	font-size:10px !important;
+	
+	}
+	
+	#rightfooter a {
+	font-size:10px !important;
+	
+	}
+	#rightfooter span {
+	font-size:10px !important;
+	
+	}
+	
+	#rightfooter p{
+	font-size:10px !important;
+	
+	}
+	
+	#leftfooter{
+	width:40% !important ;
+	padding-left:1% !important;
+	
+	float:left;
+	}
+	
+	#rightfooter{
+	width:44% !important ;
+	float:right !important;
+
+	
+
+	}
+
+
+
+}
+
+
+@media only screen and (max-width:1025px)
+{
+
+	.footerr{
+	width:98% !important;
+	
+	
+	}
+	
+	.footerr a{
+	font-size:12px;
+	}
+
+	#leftfooter a{
+	font-size:12px !important;
+	
+	}
+	#leftfooter span{
+	font-size:12px !important;
+	
+	}
+	
+	#rightfooter a {
+	font-size:12px !important;
+	
+	}
+	
+	#rightfooter p{
+	font-size:12px !important;
+	
+	}
+	
+	#leftfooter{
+	width:30% !important ;
+	
+	float:left;
+	}
+	
+	#rightfooter{
+	width:30% !important ;
+	float:right !important;
+
+
+
+	}
+
+
+
+}
+
+
+	.footerr{
+	background:black fixed !important;
+	height:auto;
+	padding-left:4%;
+	padding-top:1%;
+	padding-bottom:2%;
+	
+	
+	}
+
+	#leftfooter{
+	width:40%  ;
+	margin-left:5%;
+	float:left;
+	}
+	
+	#rightfooter{
+	width:20% ;
+	float:right !important;
+	font-size:14px;
+	
+	}
+	
+	
+
+
+	
+
+
